@@ -11,7 +11,7 @@ pipeline {
 		}
 		stage('Test') {
 			steps {
-				withMaven(maven: 'Maven 3.6.3') {
+				withMaven(maven : 'Maven 3.6.3') {
 					sh 'mvn clean test'
 				}
 			}
