@@ -14,6 +14,6 @@ public class LoginTest {
 		driver.get("http://makemytrip.com");
 		driver.manage().window().maximize();  
 		Thread.sleep(10000);
-		driver.close();
+		driver.quit();
 	}
 }
