@@ -1,6 +1,8 @@
 pipeline {
 	agent any
-	mvnHome = tool 'M3'
+	tools {
+    	maven 'M3'
+ 	 }
 	
 	stages {
 		stage('Compile') {
@@ -14,6 +16,5 @@ pipeline {
 				
 			}
 		}
-			
 	}
 }
