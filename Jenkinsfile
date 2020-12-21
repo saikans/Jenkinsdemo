@@ -1,5 +1,6 @@
 pipeline {
 	agent any
+	mvnHome = tool 'M3'
 	
 	stages {
 		stage('Compile') {
